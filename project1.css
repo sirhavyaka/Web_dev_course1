@@ -48,13 +48,9 @@ select {
     height: 800px;
     padding-top: 10px;
 }
-span{
-    background-color: transparent;
-    filter: brightness(1);
-    text-align: center;
-}
 nav{
     padding-bottom: 20px;
+    display: flex;
 }
 .container,
 .div1 {
@@ -121,9 +117,9 @@ nav{
 
 .box4 {
     font-size: 20px;
-    word-wrap: break-word;
     width: 400px;
     flex-direction: column-reverse;
+    word-wrap: break-word;
 }
 
 .container4 h1 {
@@ -170,21 +166,21 @@ ul {
     padding-bottom: 60px;
     column-gap: 50px;
     row-gap: 50px;
-    background-color: gray;
     padding-top: 80px;
 }
 
-.help {
-    background-color: gray;
-}
+
 
 li {
     list-style: none;
-    background-color: gray;
     display: block;
 }
 
 .hell {
     font-size: large;
     padding-top: 50px;
+}
+span{
+    padding-left: 1100px;
+    padding-top: 45px;
 }
