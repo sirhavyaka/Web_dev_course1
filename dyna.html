@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic builder</title>
+    <style>
+        .container {
+            display: flex;
+background-color: black;
+color: white;
+        }
+.desc{
+    padding-left: 15px;
+}
+.time{
+    padding-left: 60px;
+}
+.thumb{
+    background-image: url("NF-img.jpg");
+    color: white;
+    display: flex;
+    text-align: end;
+    align-items: flex-end;
+    width: 100px;
+    
+}
+
+        ul {
+            display: flex;
+            gap: 5px;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="thumb">
+            <div class="time"></div>
+        </div>
+
+        <div class="desc">
+            <p>
+            <h2 class="title"></h2>
+            </p>
+            <ul>
+                <li class="author"></li>
+                <li class="views"></li>
+                <li class="monthsOld"></li>
+            </ul>
+
+        </div>
+    </div>
+    <script src="dyna.js"></script>
+</body>
+
+</html>
