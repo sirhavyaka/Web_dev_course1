@@ -1,0 +1,28 @@
+*{
+    background-color: rgb(160, 140, 173);
+}
+.invi{
+    visibility: hidden;
+}
+
+
+
+nav,.nav{
+    background-color: blueviolet;
+    display: flex;
+    border-radius: .5rem;
+    font-size: 2.5vh;
+}
+a{
+    text-decoration: none;
+    color: rgb(23, 54, 176)
+
+}
+.nav{
+    padding: 0.6vw;
+    gap:5vw;
+    color: beige;
+}
+.disc{
+    color: rgb(61, 8, 76);
+}
