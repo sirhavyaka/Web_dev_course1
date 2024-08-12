@@ -2,6 +2,7 @@
     background-color: rgb(160, 140, 173);
     font-size: 3vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 .invi {
@@ -22,6 +23,8 @@ h2 {
 h3 {
     font-size: 5vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 2px solid rgb(41, 27, 50);
+    padding-bottom: 5vh;
 }
 
 nav,
@@ -41,7 +44,7 @@ nav,
     gap: 3vw;
 }
 
-img {
+.img {
     width: 10vw;
     height: 20vh;
 }
@@ -80,7 +83,7 @@ a {
 }
 
 @media screen and (max-width:720px) {
-    img {
+    .img {
         width: 27vw;
     }
     nav,.nav{
