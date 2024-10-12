@@ -82,11 +82,22 @@ a {
 
 }
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:900px) {
     .img {
         width: 27vw;
     }
     nav,.nav{
         width: 100vw;
     }
+    .desc{
+        width:100vw;
+        border:none;
+    }
+}
+
+.desc{
+    border: 2px solid rgb(80, 78, 78);
+    border-radius: 2vh;
+    box-shadow: black;
+
 }

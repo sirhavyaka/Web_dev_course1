@@ -6,25 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" author="sirhavyaka" tag="calculator">
     <title>BMI calculator</title>
     <link rel="stylesheet" href="style.css">
-   
+
 </head>
 
 <body>
     <h1>BMI calculator</h1>
     <label>Choose unit for height</label>
-    <select name="units">
+    <select name="units1">
         <option value="ftin">ft-in</option>
         <option value="cm">cm</option>
     </select>
-    <p>Enter height here: <input class="het" type="number" placeholder="Enter height"></p>
+    <p>Enter height here: <input class="feet" type="number" placeholder="Enter feet"><input class="in" type="number"
+            placeholder="Enter inch"></p>
     <p class="invi">Lorem, ipsum.</p>
     <label class="lab2" id="2">Choose unit for weight</label>
-    <select name="units">
+    <select name="units2">
         <option value="kg">kg</option>
         <option value="lbs">lbs</option>
     </select>
     <p> Enter weight here: <input class="wgt" type="number" placeholder="Enter weight"></p>
-    <script src="script.js"></script>
+    <script>
+        let w = document.getElementsByClassName("wgt").value;
+        let hf = document.getElementsByClassName("feet").value;
+        let hi = document.getElementsByClassName("in").value;
+        let h = document.getElementsByClassName("het").value;
+        let unit1 = document.getElementsByName("units1").value;
+        let unit2 = document.getElementsByName("units2").value;
+        console.log(w)
+        if (unit2 == "lbs") {
+            w = w / 2.2046;
+        }
+        if (unit1 == "ft-in") {
+            hf = hf * 12;
+            h = (hf + hi) * 2.54;
+        }
+        if (unit1 == "cm") {
+            let y = document.getElementsByClassName("in");
+            y.style.display = "hidden";
+            let x = document.getElementsByClassName("feet");
+            x.className = "het";
+            x.placeholder="Enter height"
+        }
+        var bmi = ((w) / (h * h)) * 10000;
+        let div = document.createElement("div");
+        div.innerHTML = `Your BMI is ${bmi}`;
+        document.body.append(div);
+
+    </script>
 </body>
 
 </html>
