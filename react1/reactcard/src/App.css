@@ -49,17 +49,30 @@ body{
   /* text-align: center; */
 }
 
-h1 {
+.head {
   margin-top: 30px;
+  color: #d6c4c4;
 }
 main{
-border: 5px solid rgb(21, 18, 18);
-background-color: rgb(30, 48, 63);
+border: 5px solid  #282D35;
+background-color: 282D35;
 color: #d6c4c4;
 height: 60vh;
+
+background-color: #282D35;
 }
 svg{
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+li{
+  text-decoration-color: rgb(115, 220, 220);
+  padding-left: 0%;
+}
+li::marker{
+  color: aqua;
+}
+ul{
+  padding-left: 3vw;
 }

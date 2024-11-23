@@ -1,0 +1,12 @@
+.nav{
+    background: #21222A;
+height: 12vh;
+display: flex;
+gap: 2vw;
+border: 2px solid #21222A;
+}
+
+h1{
+    font-size: 5vh;
+    color: aqua;
+}
